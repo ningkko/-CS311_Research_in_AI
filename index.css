@@ -1,4 +1,4 @@
-a,p{color:hotpink;}
+a,p{color:deeppink;}
     a:hover{
         color:transparent;
     }    
@@ -9,5 +9,5 @@ a,p{color:hotpink;}
         line-height: 2;
         margin-left: 40px;
         margin-top: 20px;
-        background-color: blue;
+        background-color: black;
     }
