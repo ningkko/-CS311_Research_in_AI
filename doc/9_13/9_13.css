@@ -2,13 +2,13 @@ a{
     color: hotpink;
 }
 a:hover{
-    color:deeppink;
+    color:transparent;
 }    
 
 p{
     width: 800px;
     margin:auto;
-    margin-top: 40px;
+    margin-top: 60px;
 
 }
 
@@ -21,21 +21,29 @@ body{
     text-align: justify;
     }
 
+.link{
+    font-size: 12px;
+}
+
 .reading{
-    color: red;
+    color: deeppink;
     
 }
 
 .class{
-    color: darkorange;
+    color: aqua;
 }
 
 .meeting{
-    color: gold;
+    color: deeppink;
 }
 
 .question{
-    color: greenyellow;
+    color: aqua;
+}
+
+.plan{
+    color:aqua
 }
 
 .button{
