@@ -1,0 +1,13 @@
+a,p{color:hotpink;}
+    a:hover{
+        color:transparent;
+    }    
+    
+    body{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20;
+        line-height: 2;
+        margin-left: 40px;
+        margin-top: 20px;
+        background-color: blue;
+    }
