@@ -1,5 +1,5 @@
 a{
-    color: hotpink;
+    color: deeppink;
 }
 a:hover{
     color:transparent;
@@ -9,7 +9,7 @@ p{
     width: 800px;
     margin:auto;
     margin-top: 60px;
-
+    color:snow;
 }
 
 body{
@@ -17,7 +17,7 @@ body{
     font-size: 14;
     line-height: 2.5;
     margin-top: 20px;
-    background-color: black;
+    background-color: blue;
     text-align: justify;
     }
 
@@ -26,27 +26,22 @@ body{
 }
 
 .reading{
-    color: deeppink;
     
 }
 
 .class{
-    color: aqua;
 }
 
 .meeting{
-    color: deeppink;
 }
 
 .question{
-    color: aqua;
 }
 
 .plan{
-    color:aqua
 }
 
 .button{
     text-align: center;
-    color: hotpink;
+    color: deeppink;
 }
