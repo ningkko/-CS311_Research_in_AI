@@ -1,8 +1,16 @@
-a,p{color:deeppink;}
+a,p,div{color:deeppink;}
     a:hover{
         color:transparent;
     }    
+.content{
+    font-size: 16;
+    color:aquamarine;
+}
     
+.past{
+    font-size: 14;
+    line-height: 30px;
+}
     body{
         font-family: 'Press Start 2P', cursive;
         font-size: 20;
@@ -11,3 +19,6 @@ a,p{color:deeppink;}
         margin-top: 20px;
         background-color: blue;
     }
+.button{
+    font-size: 16px;
+}
