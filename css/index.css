@@ -3,22 +3,30 @@ a,p,div{color:deeppink;}
         color:transparent;
     }    
 .content{
-    font-size: 16;
-    color:aquamarine;
+    font-size: 14;
+    color:aliceblue;
 }
     
 .past{
     font-size: 14;
     line-height: 30px;
 }
-    body{
-        font-family: 'Press Start 2P', cursive;
-        font-size: 20;
-        line-height: 2;
-        margin-left: 40px;
-        margin-top: 20px;
-        background-color: blue;
+body{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20;
+    line-height: 2;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-color: blue;
     }
 .button{
     font-size: 16px;
+}
+.time{
+    color: snow;
+    font-size: 14px;
+}
+p{
+    text-align: justify;
 }
