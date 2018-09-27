@@ -36,17 +36,8 @@ body{
     color: deeppink;
 }
 
-.reading{
-    
-}
-
-.class{
-}
-
-.meeting{
-}
-
-.question{
+.highlight{
+    color: deeppink;
 }
 
 .plan{

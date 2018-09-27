@@ -16,49 +16,68 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
 <body>
     <p class="time">
     </br>
-    Last update: September 19th, 2018
+    Last update: September 14th, 2018
     </p>
 
     <div class="current">
     Status Report:
         </br><p class="content">
     
-            1.Cluster meeting with Jona and Elijah at Hampshire, Tuesday September 18th. Jona talked about how to write programs using nerual networks&clojure.</br>
-    2. 2 project concepts, one about artificial world settings/physical laws, the other about artificial life/animal behaviors.</br>
-    3. OpenAI, paper about benchmark questions and autoconstruction.
-    </p>
-    Progress Report:
-        </br><p class="content">
-            Project concepts:</br>
-            1. Use probably genetic programming and autoconstruction to build an AI program which constructs artificial  worlds with alternative physical laws and virtual reality environments. To be detailed, the program takes different arrangements of artificial world environments as inputs and generate new object arrangements. </br>
-    *What should be the inputs for creating new physics laws? </br></br>
-    2. The program takes attributes of existing animals including appearances, metal states, movement compositions(mechanics), habits, roles in the biosphere and etc. as inputs and generate new life forms.
-    It would be great if we could make this program a future-fish-predictor.</br> </br> 
-    
-    *What is the most difficult question that could be solved by AI tech?</br>
-    Jona: If a program can solve relatively easy problems, it probably also works well on harder problems.</br></br>
-
-        1. Computational power: PC ok if run one problem with 1000+ samples. If train, larger server will be needed.
-</br>
-2. Hard part of genetic programming -> how to plug parameters into.</br></br>
-<a href="https://arxiv.org/pdf/1606.01540.pdf"
-   class="link">OpenAI</a>
-</br>
-Reinforcement learning assumes that there is an agent that is situated in an environment. Each step, the agent takes an action, and it receives an observation and reward from the environment. </br>
-OpenAI breaks the agent object’s experience down into a series of episodes. In each episode, the agent’s initial state is randomly sampled from a distribution, and the interaction proceeds til the environment reaches a terminal state. The goal in episodic reinforcement learning is to maximize the expectation of total reward per episode, and to achieve a high level of performance in as few episodes as possible.
+            1.Read paper about name/tag using in genetic programming->Push and the game theory in evolutionary simulations.</br>
+            2.Culster meeting w/ Matthew and Deliyon. Talked about project ideas and research questions for pitches.</br>
+`   3.Browsed beasic syntax of clojure from 
+    <a class="link"
+   href="http://viewer.gorilla-repl.org/view.html?source=github&user=lspector&repo=clojinc&path=worksheet.clj">Intro to Clojure</a> and  read the<a class="link"
+             href="http://faculty.hampshire.edu/lspector/pubs/spector-gecco2003.pdf"> Fying Agent Behavior</a> paper.   
+</p>
 </br></br>
-Environments:</br>
-• Classic control and toy text: small-scale tasks from the RL literature.</br>
-• Algorithmic: perform computations such as adding multi-digit numbers and reversing sequences.</br>
-• Atari: classic Atari games, with screen images or RAM as input, uses the Arcade Learning Environment .</br>
-• Board games: currently, the game of Go on 9x9 and 19x19 boards, where the Pachi engine serves as an opponent.</br>
-• 2D and 3D robots: control a robot in simulation. These tasks use the MuJoCo physics engine, which was designed for fast and accurate robot simulation.</br>
+    Progress Report:</br>
 
-</br></br>
-Benchmark Questions:</br>
-1.Notice not to be language specific.
+<p class="content">
+Some Notes on the class Sep 25th:</br>
 
-    </p>
+-> Modules:</br>
+Modules in biomosphere: semi-auto entities; hierarchy required.</br>
+Modules in programming: a part o solution, eg. operating system(human defined). </br></br>
+Requirement: Theres a clear beginning and ending.</br>
+
+Under certain conditions, modules are directly correlated with fitness.</br>
+Why modules?</br>
+1.Modular softwares easier to read, recombine w/o interrupting other part of the program; 2.Reuse; 3.GP.
+</br>
+Template, can edit and use in genetic programming. ADFs//auto defined functions
+drawbacks: number/parameters have to be predefined//Koza
+</br>
+
+-> PushGP tag-based 
+A number of instructions are stored and can be retrieved later.</br>
+Result: Useful only for a small number of programs. Evolution in the sort term does poorly on modularity. The probably reason: modularity does not contain a smooth gradient.
+</br>
+</br>
+-> Auto-construction</br>
+AutoDoG solved some problems and intrigues more questions about the genetic programming.<a>(??)</a>
+
+</br>Different ways of genetic programming algorithms: Mutation, crossover and select & survive.</br>
+
+
+The flying agent behavior: each agent has a push program inside and every time they run the program and choose their behavior. Autoconstruction.</br></br>
+//Are there creatures reproducing by mutations<a>(??)</a></br>
+Ingredients of reproduction<a>(??)</a>
+
+</br>**Evolutionary history of creatures on earth<a>(??)</a>
+</p></br>
+<p class="content">
+->Notes on the Flying Agents paper: </br>
+<a href="past/progress/contents/9_26/FlyingAgents.pdf">Scanned paper with notes</a>.</br>
+->Why need the acceleration upperbound<a>(??)</a></br>
+->SWARMEVOLVE1.0. Each agent has its constant set. Mutation happens through constant changes. </br>Agent states considered from: </br>1. the “crowding” radius; </br>2. the center of the world;</br> 3. neighbors’ velocity; </br>4. gravity of all agents; </br>5. random vector;</br>6. neighbors of other species that are within a “crowding” radius;</br>7. goal orientation//energy source.</br>
+->SWARMEVOLVE2.0, driven force refined, reproduction way refined, added individual growth(what's the use<a>(??)</a>)Color:Friend/Other</br>
+->Color: What's the difference except for the color? Why introduce color other than monitoring? When do agents change color?</p></br>
+<p class="content">
+</p>
+
+
+
     
     </div></br>
 
