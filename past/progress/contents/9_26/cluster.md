@@ -81,7 +81,7 @@ Kinda but it seems like they just haven't figured out what the right direction i
 
 That's what I think at least
 
-Particularly because it's harder to find the problem when you can/t read the code
+Particularly because it's harder to find the problem when you can't read the code
 #### Yining
 
 But aren't they mimicking the reproduction methods of real creatures?
@@ -92,7 +92,7 @@ mutation crossover natural selection
 
 #### Matthew
 
-True but they are randomly using those parts in random ways/
+True but they are randomly using those parts in random ways
 
 So it's harder than normal because the variety is inconsistent
 #### Yining
