@@ -1,7 +1,7 @@
 
 ### Copy pasted the chat history
 #### Yining
-Ok let's/
+Ok let's
 
 say something
 
@@ -10,26 +10,26 @@ say something
 Hmm well what are you thinking of for your project
 #### Yining
 
-I'm not sure. I want to do the world setting/physics law generating thing but I don't know what to be the ingredients and how do we give the feedback yet/
+I'm not sure. I want to do the world setting/physics law generating thing but I don't know what to be the ingredients and how do we give the feedback yet
 
-Lee sent me an email about possible ways but I haven't read it/
+Lee sent me an email about possible ways but I haven't read it
 
-Last time when we were talking about it he said he did something similar to the behavior generating idea/
+Last time when we were talking about it he said he did something similar to the behavior generating idea
 
 http://faculty.hampshire.edu/lspector/pubs/spector-gecco2003.pdf/
 
-This one/
+This one
 
-Flying Agents with evolving behaviors/
+Flying Agents with evolving behaviors
 
 #### Matthew
 
-Do you know what your research questions for it would be? It sounds super cool but difficult/
+Do you know what your research questions for it would be? It sounds super cool but difficult
 #### Yining
 
-Nooope/
+Nooope
 
-How about yours/
+How about yours
 
 #### Matthew
 
@@ -40,7 +40,7 @@ You use Lisp?
 
 #### Matthew
 
-I haven't no/
+I haven't no
 #### Yining
 
 Coocoo
@@ -66,7 +66,7 @@ But do you mean that you want to work on some new algorithms?
 I am not sure I will have to see what had been done
 #### Yining
 
-Algorithms cool!/
+Algorithms cool!
 
 I didn't understand why they got stuck?
 
@@ -79,14 +79,14 @@ Kinda but it seems like they just haven't figured out what the right direction i
 
 #### Matthew
 
-That's what I think at least/
+That's what I think at least
 
 Particularly because it's harder to find the problem when you can/t read the code
 #### Yining
 
-But aren't they mimicking the reproduction methods of real creatures?/
+But aren't they mimicking the reproduction methods of real creatures?
 
-mutation crossover natural selection/
+mutation crossover natural selection
 
 (Not just reproduction
 
@@ -133,8 +133,8 @@ About the how could natural selection(or just evolution I don't remember) develo
 ### Matthew left the chat
 
 
-// Ning: I feel the flying agent paper has quite the same concept as the game theory one?/
+// Ning: I feel the flying agent paper has quite the same concept as the game theory one?
 
-Deli: I read the conversation and I like the idea of using parent selection for your project. I have no experience with Lisp, but I am curious to know what language it¡¯s closely related to or what  It¡¯s able to do. I¡¯m writing in my portfolio what was talked about here in the chat and any ideas that were just flying around in the chat. My idea revolved mainly around two things that interest me when it comes to AI: how specifically it can respond to feedback given enough information and how it creates new programs by analyzing where it went wrong and where it went right in it¡¯s programming. I don¡¯t have a solid idea yet but the fact that I find interest in these two specific aspects, sets me up nicely for what I think I want to do./
+Deli: I read the conversation and I like the idea of using parent selection for your project. I have no experience with Lisp, but I am curious to know what language it¡¯s closely related to or what  It¡¯s able to do. I¡¯m writing in my portfolio what was talked about here in the chat and any ideas that were just flying around in the chat. My idea revolved mainly around two things that interest me when it comes to AI: how specifically it can respond to feedback given enough information and how it creates new programs by analyzing where it went wrong and where it went right in it¡¯s programming. I don¡¯t have a solid idea yet but the fact that I find interest in these two specific aspects, sets me up nicely for what I think I want to do.
 
 //Ning: Your ideas are really also what I wanna know. The second one sounds like if we really can¡¯t know how AI did something then just let another AI to explain it. Ummm but I just can¡¯t come out a way of creating such programs which can translate progress into reasons since we don¡¯t know their problem solving mechanisms from the beginning (I don¡¯t know, I just feel that human has to play the role of pattern&reason analyzing? Because there probably won¡¯t be a way to tell AI what rules to obey, at the beginning when we are designing algs, in order to evolve programs that could tell us why they make such decisions? ) What am I talking about.. Confused by myself.
