@@ -1,5 +1,14 @@
 ;; Some practice.
 
+;; Some style note:
+;; 1.No tabs but 2 whitespaces
+;; arguments on the same line with function names
+;; For the same group of arguments, donnot use commas, always whitespaces
+;; chain functions: line up
+;; variable name connected by - not _. _ might let the program run into problems
+
+
+
 ;; Initialize the namespace
 (ns practice)
 
@@ -92,4 +101,67 @@
 (print-name)
 (print-name "nene")
 (print-name "nene" "ning")
+
+;; a way to count args passed in: & args
+
+(defn count-args[& args]
+  (str "You passed " (count args) "args. " ))
+(count-args "i" "am" "happy")
+
+
+
+;; Maps
+;; HashMap and ArrayMap share an interface
+;; HashMap:: quicker but does not maintain a key order
+;; array
+{:a 1 :b 2 :c 3}
+;; hash
+(hash-map :a 1 :b 2 :c 3)
+
+;; arraymaps will be converted into hashmaps when they get large.
+ 
+;; this is an array
+(class(def stringmap {"a" 1, "b" 2, "c" 3}))
+(stringmap "a")
+
+;; this is a map
+(class(def stringmap {:a 1, :b 2, :c 3}))
+;; to retrieve value, :key
+(stringmap :a)
+
+;; add new keys
+(assoc stringmap :d 4)
+;; this is not going to be stored
+(stringmap :d)
+
+;; clojure variables are immutable
+;; Have to create a new one to catch the new value
+
+(def new-stringmap (assoc stringmap :d 4))
+(new-stringmap :d)
+
+;; remove by dissoc
+(dissoc new-stringmap :c )
+
+
+;; Sets
+;; same as JAVA, only one of the same value get stored
+(class(
+  def my-set (
+    set [1 2 3 1 2 3])))
+
+my-set
+
+;; add
+(conj my-set 5)
+;; remove
+(disj my-set 3)
+
+;; can't remove a set. type don't match
+(disj my-set #{1 2})
+
+;; test the existence
+(my-set 1)
+(my-set 100)
+
 
