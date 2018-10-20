@@ -8,6 +8,36 @@
 ;; variable name connected by - not _. _ might let the program run into problems
 
 
+;;-------------------objective
+;;map and filters 
+;;anonymous, pass in functions
+
+;;vector = array
+;;elements stored like hash map 
+
+;;array->stored like linked list
+
+;;‘() don’t evaluate
+
+;;(mapv inc x)
+
+;;mapv-> convert result to vector
+
+;;square?
+;;(def sq [n] (*n n))
+
+;; anonymous function 
+;;(map ( fn [n] (*n n)) x)
+
+;; another way
+;;(map #(*% %) x)
+
+;; take the first element of the first 
+;;(map #(+ (* %1 10) %2) [1 2 3] [4 5 6]) ;;(14 25 36)
+
+;; clojinc propel, huskell
+;;program is a list
+
 
 ;; Initialize the namespace
 (ns practice)
