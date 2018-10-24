@@ -8,36 +8,6 @@
 ;; variable name connected by - not _. _ might let the program run into problems
 
 
-;;-------------------objective
-;;map and filters 
-;;anonymous, pass in functions
-
-;;vector = array
-;;elements stored like hash map 
-
-;;array->stored like linked list
-
-;;‘() don’t evaluate
-
-;;(mapv inc x)
-
-;;mapv-> convert result to vector
-
-;;square?
-;;(def sq [n] (*n n))
-
-;; anonymous function 
-;;(map ( fn [n] (*n n)) x)
-
-;; another way
-;;(map #(*% %) x)
-
-;; take the first element of the first 
-;;(map #(+ (* %1 10) %2) [1 2 3] [4 5 6]) ;;(14 25 36)
-
-;; clojinc propel, huskell
-;;program is a list
-
 
 ;; Initialize the namespace
 (ns practice)
@@ -77,7 +47,7 @@
 (seq? 
   (range 4))
 
-;; add 5 to a list of the first 44 numbers of an infinite list
+;; add 5 to a list of the first 4 numbers of an infinite list
 (cons 5 (
   take 4 (
     range)))
@@ -193,5 +163,118 @@ my-set
 ;; test the existence
 (my-set 1)
 (my-set 100)
+
+;; if else
+(if false "a" "b")
+
+;; a function which returns max(a b)-min(a b)
+(defn return-substraction [a b]
+ (if (> a b) (- a b) (- b a)))
+
+(return-substraction 10 40)
+(return-substraction 20 10)
+
+;; to group statements together
+;; "world" comes in first andbthey is(print'hello')
+(do 
+  (print "Hello")
+  "World")
+(do "world"
+  (print "hello"))
+
+;; functions have implicit dos
+;; 
+(defn print-all [name]
+  (print "say hello to " name)
+  (str "hello" name)
+)
+(print-all "nene")
+
+;; let to create temporary bidings
+(let [nene 1 ning 2]
+nene
+ning)
+;; notice a same instruction in the same snipet will overwrite the previous one
+
+(let [name "nene"]
+  (print "hello, " name)
+  (str "ok " name))
+
+;; put the first snipet into the following LINKED
+
+( (-> {:nene 1 :ning 2}
+  (assoc :ningkko 3)
+  (dissoc :nene))
+  stringmap :ningkko
+  )
+
+;; ->> inserts he result ofbthe previous one to the ned of the snipet
+
+(->>
+  (range 5)
+  ;; increaase by one
+  ;; (map inc ( range(5) ))
+  (map inc)
+  ;; (filter even? (map inc( range(5))))
+  (filter even?))
+
+
+(->>
+  (range 10)
+  (map dec);; decrease by one
+  (filter odd?)
+  (into []));; into put studff into the following expression
+
+;; the as-> macro, insert snippets to targget places
+
+(as-> [1 2 3] input
+  (map inc input)
+  ;; get [2 3 4]
+  (nth input 2)
+  ;; which is 4 
+  (conj [4 5 6] input [8 9 10]))
+
+;; MODULES
+;; "use"=use all functions in the modules
+
+(use 'clojure.set)
+
+;; so we imported set
+(intersection #{1 2 3} #{2 3 4})
+
+(difference #{1 2 3} #{2 3 4})
+
+;; to use specific functions
+(use '[clojure.set :only [intersection]])
+
+;; use / to call functions from a module
+
+;; require import modules
+(require 'clojure.string)
+
+(clojure.string/blank? "")
+
+;; import functions with new names
+(require '[clojure.string :as str])
+(str/replace "This is a tester" #"[a-o]" str/upper-case)
+;; (#"" denotes a regular expression literal)
+
+;; we can also import java libraries
+(import java.util.Date)
+(ns test
+  (:import java.util.Date
+           java.util.Calendar))
+
+;; instances: classname+.
+(Date.)
+;; use . also to call functions.
+(. (Date.) getTime)
+(.getTime (Date.))
+
+;; but for static methods, use/
+(Math/random)
+(System/currentTimeMillis)
+
+
 
 
