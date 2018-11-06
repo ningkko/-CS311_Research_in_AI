@@ -16,7 +16,7 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
 <body>
     <p class="time">
     </br>
-    Last update: November 4th, 2018
+    Last update: November 5th, 2018
     </p>
 
     <div class="current">
@@ -52,20 +52,24 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
             </br> Per has been implementing A* in the game. Jona is doing something with TensorFlow, David had been sick for the last two weeks and so didn't make much progress. I have been looking at clojure code repeatedly trying to remember..? 
             </br></br>
         -> Research group meeting, Nov 1st, classroom.
-            </br> Talked about what to do before next Tuesday.
-            </br> Find dataset with more variables
-            </br> Propel
+            </br> 1. Talked about what to do before next Tuesday.
+            </br> 2. Find dataset with more variables
+            </br> 3. Propel
         </br> </br> 
        -> Research group meeting, Nov 5th, GoogleHangout.
-            </br> Talked again about the cancer prediction paper.
-            </br> Ian pointed out that I should think more carefully and actually design fitness functions for GPs (after looking at my sqrt(sum(x^2-y^2)) error function)..
-            </br> Ian explained and ran his propel code of finding abs value. It did not find the target function.. Maybe the fitness function is bad? The error keeps around 17..
-            </br> Ian walked through how to use propel.
+            </br> 1. Talked again about the cancer prediction paper.
+            </br> 2. Ian pointed out that I should think more carefully and actually design fitness functions for GPs (after looking at my sqrt(sum(x^2-y^2)) error function)..
+            </br> 3. Ian explained and ran his propel code of finding abs value. It did not find the target function.. Maybe the fitness function is bad? The error keeps around 17..
+            </br> 4. Ian walked through how to use propel.
             </br> after changing datasets for about a month it seems we come back with the Astronomical one.. 
-            </br> A target before Ian come out with a prototype of the project(..?) => write a GP with propel with self-designed mutation, crossover and fitness functions to solve the function (+ (Math/pow x 3) (* x 3))
+            </br> 5. A target before Ian come out with a prototype of the project(..?) => write a GP with propel with self-designed mutation, crossover and fitness functions to solve the function (+ (Math/pow x 3) (* x 3))
 
         </br> </br> 
-        -> A brief conclusion for the presentation on Tuesday about the progress:
+        -> A brief conclusion of what I have been doing since October 16th:
+            </br>In the first week, I looked at the three datasets and successfully got confused about how to use them.. I read about 1/3 of the book A Quick Introduction to Clojure, and went through the tutorial on Learn Clojure in Y minutes.
+            </br>The second week, I did the Clojestions and went through Clojinc (don't remember all of them (probably forgot most of them TBH)), and started looking at the GP tutorial and again got confused..
+            </br>The third week, I called Lee and Lee explained the structure of clojure projects and how GP works. And then I have been trying to write a GP to find absolute values. I used a wrong error function first so it always output the input itself. Then I revised several things, and the code scale runs too large to executed after 4 generations. And then I revised it again. Now it runs into infinite loop after the firt generation..
+            </br>
         </br>
             </p>
 
