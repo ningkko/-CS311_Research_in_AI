@@ -16,66 +16,51 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
 <body>
     <p class="time">
     </br>
-    Last update: November 5th, 2018
+    Last update: November 19th, 2018
     </p>
 
     <div class="current">
     Status Report:
         </br><p class="content">
-          -> Cluster meeting w/ David Jona Per, Nov 1st, classroom.
-            </br> Talked about progresses.
-            </br></br>
-        -> Research group meeting, Nov 1st, classroom.
-            </br> Talked about what to do before next Tuesday.
-           
-        </br> </br> 
-       -> Research group meeting, Nov 5th, GoogleHangout.
-            </br> Talked about Propel
+            -> TODO</br>
+            1. Readin data (Done. Problem with binding)</br>
+            2. Get input data & target data (Done)</br>
+            3. crossover: Uniform & multipoint(Testing)</br> 
+            4. mutation (if error > C, flip bit?) (Bit-mutation done)</br>
+            5. Error function</br>
+            6. Simple GP</br>
+            7. function to decide which crossover to use based on performence</br>
+            8. tournament->lexicase</br>
 
-        </br> </br> 
-        -> <a href="past/progress/contents/11_4/search.txt">Search in AI </a></br> </br>
-        -> <a href="https://github.com/ningkko/GP">abs GP</a>, which runs into infinite loop 
-        </br>
-        <a href="https://github.com/ningkko/GP/blob/master/error-doc/abs.txt">Error documentation</a>
 
-        </br>
-        -> <a href="https://github.com/ningkko/GP/blob/master/src/gp/gp-propel.clj">playing with Propel..</a>(Will be uploaded before this coming Friday)
-      </p>
-        
-            </br></br>
-
+            -> <a href="https://github.com/ningkko/GP">Project Page</a></br>
+            -> <a href="https://github.com/ningkko/GP/blob/master/ast.clj">main clj</a></br>
+            -> <a href="https://github.com/ningkko/GP/blob/master/ast-test.clj">fucntion tests</a>
+</br></br>
     Progress Report:</br>
       <p class="content">
 
-         -> Cluster meeting w/ David Jona Per, Nov 1st, classroom.
-            </br> Talked about progresses.
-            </br> Per has been implementing A* in the game. Jona is doing something with TensorFlow, David had been sick for the last two weeks and so didn't make much progress. I have been learning Clojure trying to write a GP for abs func. 
-            </br></br>
-        -> Research group meeting, Nov 1st, classroom.
-            </br> 1. Talked about what to do before next Tuesday.
-            </br> 2. Find dataset with more variables
-            </br> 3. Propel
-        </br> </br> 
-       -> Research group meeting, Nov 5th, GoogleHangout.
-            </br> 1. Talked again about the cancer prediction paper.
-            </br> 2. Ian pointed out that I should think more carefully and actually design fitness functions for GPs (after looking at my sqrt(sum(x^2-y^2)) error function)..
-            </br> 3. Ian explained and ran his propel code of finding abs value. It did not find the target function.. Maybe the fitness function is bad? The error keeps around 17..
-            </br> 4. Ian walked through how to use propel.
-            </br> after changing datasets for about a month it seems we come back with the Astronomical one.. 
-            </br> 5. A target before Ian come out with a prototype of the project(..?) => write a GP with propel with self-designed mutation, crossover and fitness functions to solve the function (+ (Math/pow x 3) (* x 3))
+            Structural reference:</br>
+            -> <a href="            https://pdfs.semanticscholar.org/7f62/05f1cac497e9929cc2c7f6f1c767c2229254.pdf
+                ">Adaptive Probabilities of Crossover and Mutation in Genetic Algorithms</a>
+</br>
+            -> <a href="http://www.myreaders.info/09_Genetic_Algorithms.pdf
+                ">Fundamental GA</a>
+</br>
+            -> <a href="https://en.wikipedia.org/wiki/Crossover_(genetic_algorithm)">Crossover</a> 
+</br>
+            <a href="http://mat.uab.cat/~alseda/MasterOpt/GeneticOperations.pdf">Order Crossover </a> (unimplemented)
+</br>            
+            -> <a href="https://en.wikipedia.org/wiki/Mutation_(genetic_algorithm)">Mutation</a>
+ </br>
+           
+            <a href=" http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.6687&rep=rep1&type=pdf">IMPROVING MUTATION CAPABILITIES IN A REAL - CODED GENETIC ALGORITHM</a>
+ </br>
+           
+            <a href="http://mmrc.iss.ac.cn/mm/mm23/MMpreprint赵新超.pdf">Evolutionary Programming Based on Non-Uniform Mutation</a>
+            
 
-            </br></br>
-            -> Notes of AI Search (<a href="past/progress/contents/11_4/search.txt">here</a>)
-            </br> </br> 
-            -> A brief conclusion of what I have been doing since October 16th:
-            </br>In the first two weeks I was learning clojure.</br>1. The first week I read the book A Quick Introduction to Clojure, and went through the tutorial on <a href="https://learnxinyminutes.com/docs/clojure/">Learn Clojure in Y minutes</a> (code uploaded <a href="https://github.com/ningkko/Recycle/blob/master/clojure/clojureInYminute.clj">here</a>).
-            </br> We were also trying to find a possible dataset to use.. 
-            </br>2. The second week, I did excercises on <a href="https://github.com/lspector/Clojestions">Clojestions</a> (<a href="https://github.com/ningkko/Recycle/blob/master/clojure/Clojestion.clj">practice code</a>) and went through <a href="https://github.com/lspector/clojinc">Clojinc</a>. 
-                </br>3. In the third week, I started looking at <a href="https://github.com/lspector/gp">Lee's GP examples</a>. And then I have been trying to rewrite <a href"https://github.com/ningkko/GP">a GP to find absolute values</a>. ->> I used a wrong error function first so it always output the input itself. Then I revised several things, and the code scale runs too big for the repl to execute after 4 generations. I revised it. Now it runs into infinite loops after the first generation..
-            </br>-> New progress: </br>Before yesterday I was trying to revise the GP part of Propel (trying to find an abs-func GP). It didn't work. Yesterday Ian showed his code of evovling the absolute value using Propel.
-            </br>-> Now, and later..:</br> In the following week I'll 1. continue revising the GP code, 2. try to find a fitness function for the propel abs program (look into Euclidean distance and Manhattan distance)? Probably -> Get hands on the actual data..
-        </br>
-            </p>
+        </p>
 
     
     </div></br>
