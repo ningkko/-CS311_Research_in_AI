@@ -1,0 +1,51 @@
+* Vars are used to give names to things. They implement runnable and can be used directly to invoke functions. You cannot run a string.
+* Keywords are names by themselves, and look themselves up in maps. They really help Clojure keep its "data driven" flavor. Strings do not implement the required interfaces to look themselves up in maps.
+* Strings are just strings. They do what they need to do and not much more.
+
+2d game of life  
+binary on or off
+start with one line
+different rules of productions are given: 
+e.g.stay on except all 3 are off
+
+crossover
+2 from current mix together
+different ways of using 
+selection differs in each generation 
+and lexicase decides what attributes are important
+keep population diverse
+
+
+What is the constraint in the astronomical data problem?
+
+Roulette wheel selection: The probability of the ith string to be selected as new parent is pi=Fi/(sum(Fj, j=1->n)). fi is the fitness of the string i 
+
+Rank selection
+Boltzmann selection—>Temperature(??
+Steady state selection
+Tournament selection
+*Lexicase selection
+
+
+=========================================================================================
+In what order does (conj ) conjugate things?
+
+(conj #{1 2 3 6} 5)
+(conj #{1 2 3 6} 4)
+(conj #{1 2 3 6} 0)
+#{1 6 3 2 5}
+#{1 4 6 3 2}
+#{0 1 6 3 2}
+
+
+->It's not conj that's doing the strange-seeming thing here, it's the fact that sets are unordered. For data types that *are* ordered, conj adds a new thing in a place that makes sense for the data type. For vectors, conj adds elements at the end, while for lists, it adds them at the beginning:
+
+- Atom should not be used as loop variable. Use loop and recur, map or iterate, rather than an atom that you modify in a while loop. 
+-> Atoms should be used sparingly and generally only for global state that has to be updated, e.g. for a database or something like that.
+
+-> A "do" expression evaluates a sequence of expressions and returns the value of the last one. It generally makes sense to use only when the expressions prior to the last one are print statements or something like that, since their values will just be thrown away. For example, you have plushy-a as the second-to-last item in a do -- this will have no effect.
+
+- Call an anonymous function by listing it first in a function call expression e.g. 
+
+(#(+ 2 %) 3)
+s
