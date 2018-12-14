@@ -8,19 +8,41 @@
 name="viewport"
 content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <title>
-        December 5th
+        December 14th
     </title>
 
     </head>
 <body>
     <p class="time">
-    December 5
+    December 14
     </p>
 <p class="class">
  Status Report:
-        </br><p class="content">
--> Notes <a href="note.txt">( 🗒 )</a></br>
- -> Structural reference:</br>
+        </br><p class="content">-> Update than last time:
+            </br>
+             *Program now detects following new programs and gives big errors:
+            </br>1. programs with same behaviors all the time
+            </br>2. programs with no instruction "in1"
+            </br>3. programs whose total error has appeared before</br>
+            *Added instruction log, sin, cos, tan, sinh, cosh, tanh, ceil, floor, round, modulo
+            </br>*Fixed input type of the boolean column (was turned into floats)
+            *Added modulo-badness function which checks if a predicted type falls in the right category. If yes return 0, else return 1
+            
+                
+            </br></br>
+            -> Future directions</br>
+            1. Modify the fitness function</br>
+            Current concerns: Based on the current performence, it's not likely the program is going to find out how to round off and take modulo of the result. Some other fitness functions might be needed.
+            2. Use Lexicase to selects parents that are good at predicting a particular category use these programs to generate a combination that can behave generally good on predicting all categories</br>
+            3. Find some way to balance data scale (with pregiven artificial methods..)-> to make numbers that are really small to matter equally as those with astronomical scale</br> 
+            4. Modify cases in lexicase</br>
+
+</br>
+            -> <a href="https://docs.google.com/presentation/d/1n2u8TEtKYBBqJeniErOS_hdRVH5tCh7dnwDPNpWFunY/edit?usp=sharing">Final Presentation Slides</a></br></br>
+
+            <a href="past/progress/contents/12_14/note.txt">Check some documented running examples</a></br></br>
+
+            -> Structural reference:</br>
             <a href="            https://pdfs.semanticscholar.org/7f62/05f1cac497e9929cc2c7f6f1c767c2229254.pdf
                 ">Adaptive Probabilities of Crossover and Mutation in Genetic Algorithms</a>
 </br>
@@ -40,16 +62,12 @@ content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=
  </br>
            
             <a href="http://mmrc.iss.ac.cn/mm/mm23/MMpreprint赵新超.pdf">Evolutionary Programming Based on Non-Uniform Mutation</a>
-            </br>
-</br>
-            <a href="https://8thlight.com/blog/aaron-lahey/2016/07/20/relationship-between-clojure-functions-symbols-vars-namespaces.htmls">The Relationship Between Clojure Functions, Symbols, Vars, and Namespaces</a></br>
-        
 
 </br></br>
 
 
      <p class="button">           
-            <a href="../11_19/11_19.html">
+            <a href="../12_5/12_5.html">
                 <-  PRE           
             </a>
                 |<a href="../../index.html">
